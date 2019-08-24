@@ -1,3 +1,5 @@
+import argparse
+
 #Hello_Everybody :)
 
 """a = float(input("give me a number"))
@@ -8,18 +10,28 @@ print(c)"""
 
 
 
-c = str(input("which operation you want to do"))
+parser = argparse.ArgumentParser()
+parser.add_argument("op", type=str)
+parser.add_argument("a", type=int)
+parser.add_argument("b", type=int)
+
+
+
+args = parser.parse_args()
+
+
+
 
 def cal(a,b):
-	if c == "+":
+	if args.op == "+":
 		return a + b;
-	elif c == "-":
+	elif args.op == "-":
 		return a - b
-	elif c == "*":
+	elif args.op == "x":
 		return a*b
-	elif c == "/":
+	elif args.op == "/":
 		return a/b
 	else:
 		print("operator not found")
 
-print(cal(3,9))
+print(cal(args.a, args.b))

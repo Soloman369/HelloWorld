@@ -22,3 +22,4 @@ def cal(a,b):
 	else:
 		print("operator not found")
 
+print(cal(3,9))

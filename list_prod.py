@@ -1,17 +1,17 @@
 #		**	fonction qui calcule le produit des élément d'une liste	**
 
-l = [5,8,9,2,4,4,2,1,3,0]
+l = [5,8,9,2,4,4,2,1,3]
 
 
 #print(prod(l))
 
 def prod_l(l):
-	total = l[0]
+	total = 1
 
-	for i in range(len(l)-1):
+	for i in range(len(l)):
 
 		
-		total = l[i+1] * total
+		total = l[i] * total
 
 		if l[i] == 0:
 			pass

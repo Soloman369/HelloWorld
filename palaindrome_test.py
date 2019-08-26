@@ -8,9 +8,9 @@ def palindrome_test(l):
     l = l.lower()
     m = l[::-1]
     if l == m :
-        return True
+        return l + ' est palindrome'
     else:
-        return False
+        return l + " n'est pas palindrome"
         
 print(palindrome_test(s1))
 print(palindrome_test(s2))

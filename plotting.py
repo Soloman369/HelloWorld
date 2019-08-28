@@ -1,7 +1,7 @@
 import math
 import matplotlib.pyplot as plt
 
-
+##################################@
 def f(n):
 	total = 0
 	x = []
@@ -15,6 +15,7 @@ def f(n):
 
 x, total, y = f(100) 
 
+################################@
 
 def f(n):
 	a = []
@@ -27,7 +28,7 @@ def f(n):
 	return a, total, b
 
 a, total, b = f(100) 
-
+################################@
 
 def f(n):
 	c = []
@@ -39,9 +40,9 @@ def f(n):
 		d.append(total)
 	return c, total, d 
 
-c, total, d = f(100) 
+c, total, d = f(100)
 
-
+################################@
 def f(n):
 	e = []
 	g = []
@@ -54,16 +55,35 @@ def f(n):
 
 e, total,g = f(100)
 
-#plt.plot(a,b,label='la courbe de 1/i^2')
+################################@
+def f(n):
+	h = []
+	j = []
+	total = 0
+	for i in range(1,n):
+		h.append(i)
+		total += 1/i
+		j.append(total)
+	return h, total, j
+
+h, total,j = f(100)
+
+################################@
 
 plt.title('Matplotlib Legend Example')
 
-#plt.plot(x,y,label='la courbe de 1/i^3')
+plt.plot(a,b,label='la courbe de 1/i^2')
+
+plt.plot(x,y,label='la courbe de 1/i^3')
 
 plt.plot(e,g,label='la courbe de 1/i!')
 
-#plt.plot(c,d,label='la courbe de ((-1)**i)/i')
+plt.plot(h,j,label='la courbe de 1/i')
+
+plt.plot(c,d,label='la courbe de ((-1)**i)/i')
+
 plt.show()
+print((math.pi**2)/6)
 
 
 

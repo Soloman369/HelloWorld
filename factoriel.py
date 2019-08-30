@@ -1,10 +1,10 @@
 import argparse
 
-"""parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser()
 parser.add_argument("a", type=int)
-args = parser.parse_args()"""
+args = parser.parse_args()
 
-a = int(input("donnez une valeur pour a"))
+#a = int(input("donnez une valeur pour a"))
 
 
 
@@ -16,4 +16,4 @@ def fact(a):
 	else:
 		print("sorry souleiman")
 
-print(fact(a))
+print(fact(args.a))

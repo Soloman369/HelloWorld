@@ -24,7 +24,7 @@ args = parser.parse_args()
 
 def cal(a,b):
 	if args.op == "+":
-		return a + b
+		return a + b;
 	elif args.op == "-":
 		return a - b
 	elif args.op == "x":
